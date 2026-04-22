@@ -109,20 +109,14 @@ body::before {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.28), transparent 35%),
-    linear-gradient(135deg, var(--accent), var(--accent-deep));
-  color: #fff;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  box-shadow: 0 14px 28px rgba(13, 92, 70, 0.22);
+.brand-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 14px 28px rgba(13, 92, 70, 0.18);
+  border: 1px solid rgba(24, 37, 30, 0.08);
+  background: rgba(255, 250, 243, 0.9);
 }
 
 .brand-text {
@@ -372,6 +366,22 @@ body::before {
 .main-panel {
   padding: 32px;
   border-radius: var(--radius-xl);
+}
+
+.hero-logo-wrap {
+  display: inline-flex;
+  margin: 4px 0 18px;
+  padding: 10px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-logo {
+  width: min(100%, 220px);
+  height: auto;
+  display: block;
+  border-radius: 28px;
 }
 
 .main-panel h2 {
